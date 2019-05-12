@@ -1,0 +1,42 @@
+html, body {
+	font-size: 16px;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+}
+
+.modal--show {
+	visibility: visible;
+}
+
+.modal__content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	padding: 2rem;
+	width: 400px;
+	border-radius: 1rem;
+}
+
+.modal__close {
+	float: right;
+	color: #aaa;
+	float: right;
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.modal__close:hover {
+	color: black;
+	text-decoration: none;
+}
